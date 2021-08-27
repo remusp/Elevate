@@ -19,7 +19,7 @@
             try
             {
                 ////Create new project object
-                FileBasedProject createdProject = new FileBasedProject(
+                IProject createdProject = new FileBasedProject(
                     this.GetProjectInfo(
                     settings.ProjectName,
                         new Language(settings.SourceLanguage),
@@ -55,7 +55,7 @@
         }
 
         //Output the project as a package
-        private void CreateProjectPackage(FileBasedProject createdProject, Language targetLanguage, string packageOutputPath)
+        private void CreateProjectPackage(IProject createdProject, Language targetLanguage, string packageOutputPath)
         {
             // at first create a manual task which will be added into the package
             ManualTask translate = createdProject.CreateManualTask(
@@ -123,7 +123,7 @@
         }
 
 
-        private TaskFileInfo[] GetTaskFiles(FileBasedProject createdProject, Language targetLanguage)
+        private TaskFileInfo[] GetTaskFiles(IProject createdProject, Language targetLanguage)
         {
             List<TaskFileInfo> files = new List<TaskFileInfo>();
             foreach (var item in createdProject.GetTargetLanguageFiles(targetLanguage))
@@ -142,7 +142,7 @@
         /// </summary>
         /// <param name="createdProject">A project you have created</param>
         /// <param name="settings">Settings containing initial input parameters</param>
-        private void RunTasks(FileBasedProject createdProject, LocalProjectSettings settings)
+        private void RunTasks(IProject createdProject, LocalProjectSettings settings)
         {
             Language targetLanguage = new Language(settings.TargetLanguage);
             List<TaskStatusEventArgs> taskStatusEventArgsList = new List<TaskStatusEventArgs>();
@@ -330,7 +330,7 @@
         }
 
         private AutomaticTask RunTasks(
-            FileBasedProject createdProject,
+            IProject createdProject,
             ProjectFile[] projectFiles,
             string taskIDToRun,
             List<TaskStatusEventArgs> taskStatusEventArgsList,
@@ -351,7 +351,7 @@
             return task;
         }
 
-        private void AddTermbase(FileBasedProject createdProject, string pathToTermbase, string sourceLang, string targetLang)
+        private void AddTermbase(IProject createdProject, string pathToTermbase, string sourceLang, string targetLang)
         {
             // need to be tested
             TermbaseConfiguration termbaseConfiguration = createdProject.GetTermbaseConfiguration();
@@ -369,7 +369,7 @@
         /// <summary>
         /// Use project settings bundle to adapt specific project settings. For more details see Sdl.ProjectAutomation.Settings
         /// </summary>
-        private void AdaptProjectSettings(FileBasedProject createdProject)
+        private void AdaptProjectSettings(IProject createdProject)
         {
             // Adapting translate task settings
             ISettingsBundle settings = createdProject.GetSettings();
@@ -386,7 +386,7 @@
             // We should not add such examples into ProjectAutomation API as it would add to many dependencies.
         }
 
-        private void AddMasterTM(FileBasedProject createdProject, string pathToTM)
+        private void AddMasterTM(IProject createdProject, string pathToTM)
         {
             TranslationProviderConfiguration config = createdProject.GetTranslationProviderConfiguration();
             config.Entries.Add(this.GetTranslationProviderCascadeEntry(pathToTM));
