@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Spinner", "1.Spinner", "{D7814BFD-2098-406F-98B8-352772B8438E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Spinner+Controllers", "1.Spinner+Controllers", "{D7814BFD-2098-406F-98B8-352772B8438E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elevate.Samples.SpinnerOld", "Elevate.Samples.SpinnerOld\Elevate.Samples.SpinnerOld.csproj", "{16674B86-0C11-45CC-95DC-87EB7692A039}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elevate.Samples.SpinnerNew", "Elevate.Samples.SpinnerNew\Elevate.Samples.SpinnerNew.csproj", "{A75A4A2B-D487-41BD-BFC9-FBA171E718E1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Automation.IProject.Save", "2.Automation.IProject.Save", "{C11EF497-331C-4EE6-9597-968A5D7216E7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.CommandLineParser", "3.CommandLineParser", "{CA4FAC17-7A33-40F8-9DAD-4141307A7A35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sdl.ProjectAutomation.ProjectAutomationSample", "ProjectAutomationSample\Sdl.ProjectAutomation.ProjectAutomationSample.csproj", "{46F3789C-6A4A-4A75-9E1F-143635CF4CD9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.LC.Login", "4.LC.Login", "{CC7D1CA1-57F0-4392-A0F9-22577D79C667}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sdl.ProjectAutomation.ProjectAutomationGUI", "Sdl.ProjectAutomation.ProjectAutomationGUI\Sdl.ProjectAutomation.ProjectAutomationGUI.csproj", "{336EF396-5FAC-4000-8607-FED58BC3D141}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elevate.Samples.LC.Login", "Elevate.Samples.LC.Login\Elevate.Samples.LC.Login.csproj", "{2A183EE2-8C79-459F-A62D-C2DC128B5CB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elevate.Samples.CommandLineParser", "Elevate.Samples.CommandLineParser\Elevate.Samples.CommandLineParser.csproj", "{5BB6F28F-AEA1-487A-B456-BD6F30807BE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,14 +31,14 @@ Global
 		{A75A4A2B-D487-41BD-BFC9-FBA171E718E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A75A4A2B-D487-41BD-BFC9-FBA171E718E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A75A4A2B-D487-41BD-BFC9-FBA171E718E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46F3789C-6A4A-4A75-9E1F-143635CF4CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46F3789C-6A4A-4A75-9E1F-143635CF4CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46F3789C-6A4A-4A75-9E1F-143635CF4CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46F3789C-6A4A-4A75-9E1F-143635CF4CD9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{336EF396-5FAC-4000-8607-FED58BC3D141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{336EF396-5FAC-4000-8607-FED58BC3D141}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{336EF396-5FAC-4000-8607-FED58BC3D141}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{336EF396-5FAC-4000-8607-FED58BC3D141}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A183EE2-8C79-459F-A62D-C2DC128B5CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A183EE2-8C79-459F-A62D-C2DC128B5CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A183EE2-8C79-459F-A62D-C2DC128B5CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A183EE2-8C79-459F-A62D-C2DC128B5CB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB6F28F-AEA1-487A-B456-BD6F30807BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB6F28F-AEA1-487A-B456-BD6F30807BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB6F28F-AEA1-487A-B456-BD6F30807BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB6F28F-AEA1-487A-B456-BD6F30807BE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,8 +46,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{16674B86-0C11-45CC-95DC-87EB7692A039} = {D7814BFD-2098-406F-98B8-352772B8438E}
 		{A75A4A2B-D487-41BD-BFC9-FBA171E718E1} = {D7814BFD-2098-406F-98B8-352772B8438E}
-		{46F3789C-6A4A-4A75-9E1F-143635CF4CD9} = {C11EF497-331C-4EE6-9597-968A5D7216E7}
-		{336EF396-5FAC-4000-8607-FED58BC3D141} = {C11EF497-331C-4EE6-9597-968A5D7216E7}
+		{2A183EE2-8C79-459F-A62D-C2DC128B5CB0} = {CC7D1CA1-57F0-4392-A0F9-22577D79C667}
+		{5BB6F28F-AEA1-487A-B456-BD6F30807BE7} = {CA4FAC17-7A33-40F8-9DAD-4141307A7A35}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {003ECF37-4A86-4408-A6C9-930C242B3C83}

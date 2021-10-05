@@ -117,14 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Elevate.Samples.LC.Login.MyMainAction_Description" xml:space="preserve">
+    <value>For LC Demo</value>
+  </data>
+  <data name="Elevate.Samples.LC.Login.MyMainAction_Name" xml:space="preserve">
+    <value>LC Sample</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="MyAction_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\MyAction.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MyCustomRibbonGroup_Description" xml:space="preserve">
+    <value>Elevate stuff</value>
   </data>
   <data name="MyCustomRibbonGroup_Name" xml:space="preserve">
     <value>Elevate Samples</value>
   </data>
   <data name="Plugin_Name" xml:space="preserve">
-    <value>Elevate.Samples</value>
+    <value>Elevate.Samples.LC.Login</value>
   </data>
 </root>

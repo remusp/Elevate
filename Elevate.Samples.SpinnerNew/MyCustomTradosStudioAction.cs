@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace Elevate.Samples.SpinnerNew
 {
-    [Action("MyMainAction", Icon = "MyAction_Icon")]
+    //[Action("Elevate.Samples.SpinnerNew.MyMainAction", Icon = "MyAction_Icon")]
     [ActionLayout(typeof(MyCustomRibbonGroup), 10, DisplayType.Large)]
     [Shortcut(Keys.Alt | Keys.F8)]
     public class MyCustomTradosStudioAction : AbstractAction

@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A75A4A2B-D487-41BD-BFC9-FBA171E718E1}</ProjectGuid>
+    <ProjectGuid>{5BB6F28F-AEA1-487A-B456-BD6F30807BE7}</ProjectGuid>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Elevate.Samples.SpinnerNew</RootNamespace>
-    <AssemblyName>Elevate.Samples.SpinnerNew</AssemblyName>
+    <RootNamespace>Elevate.Samples.CommandLineParser</RootNamespace>
+    <AssemblyName>Elevate.Samples.CommandLineParser</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <PluginDeploymentPath>$(AppData)\Sdl\Sdl Trados Studio\16\Plugins</PluginDeploymentPath>
@@ -48,7 +48,7 @@
     </Reference>
     <Reference Include="Sdl.Desktop.Platform.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=c28cdb26c445c888, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(ProgramFiles)\SDL\SDL Trados Studio\Studio16Demo\SR2\Sdl.Desktop.Platform.Controls.dll</HintPath>
+      <HintPath>..\..\..\..\..\Program Files (x86)\SDL\SDL Trados Studio\Studio16Demo\SR2\Sdl.Desktop.Platform.Controls.dll</HintPath>
     </Reference>
     <Reference Include="Sdl.Desktop.Platform.Styles">
       <HintPath>$(ProgramFiles)\SDL\SDL Trados Studio\Studio16Demo\SR2\Sdl.Desktop.Platform.Styles.dll</HintPath>
@@ -60,11 +60,6 @@
     <Reference Include="Sdl.FileTypeSupport.Framework.Implementation">
       <Private>True</Private>
       <HintPath>$(ProgramFiles)\SDL\SDL Trados Studio\Studio16Demo\SR2\Sdl.FileTypeSupport.Framework.Implementation.dll</HintPath>
-    </Reference>
-    <Reference Include="Sdl.LanguagePlatform.Core, Version=1.6.0.0, Culture=neutral, PublicKeyToken=c28cdb26c445c888" />
-    <Reference Include="Sdl.LanguagePlatform.TranslationMemory">
-      <Private>True</Private>
-      <HintPath>$(ProgramFiles)\SDL\SDL Trados Studio\Studio16Demo\SR2\Sdl.LanguagePlatform.TranslationMemory.dll</HintPath>
     </Reference>
     <Reference Include="Sdl.ProjectAutomation.Core">
       <Private>True</Private>
@@ -99,34 +94,14 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actions\Editor\WriteToSegmentAction .cs" />
-    <Compile Include="Actions\Files\SelectFilesAction.cs" />
-    <Compile Include="Actions\Files\VisibleFilesAction.cs" />
-    <Compile Include="Actions\Projects\DemoProjectAction.cs" />
-    <Compile Include="Actions\EditorTranslationResults\HasSearchResultAction.cs" />
-    <Compile Include="Actions\EditorTranslationResults\SelectSearchResultAction.cs" />
-    <Compile Include="Actions\EditorTranslationResults\GetTranslationResultsAction.cs" />
-    <Compile Include="Actions\EditorTranslationResults\ShowWindowAction.cs" />
-    <Compile Include="Actions\TranslationMemories\SetActiveTuTarget.cs" />
-    <Compile Include="Actions\TranslationMemories\SetActiveTuSource.cs" />
-    <Compile Include="Actions\TranslationMemories\SelectRowAction.cs" />
-    <Compile Include="Actions\TranslationMemories\GetActiveTuAction.cs" />
-    <Compile Include="Actions\TranslationMemories\GetTusMarkedForDeletionAction.cs" />
-    <Compile Include="Actions\TranslationMemories\GetActivePageTusAction.cs" />
-    <Compile Include="MyCustomRibbonGroup.cs" />
-    <Compile Include="Actions\Editor\SelectSegmentAction.cs" />
-    <Compile Include="MyCustomTradosStudioAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\PluginProperties.cs" />
-    <Compile Include="RibbonGroups\TranslationMemoriesRibbonGroup.cs" />
-    <Compile Include="RibbonGroups\ProjectsControllerRibbonGroup.cs" />
-    <Compile Include="RibbonGroups\FilesControllerRibbonGroup.cs" />
-    <Compile Include="RibbonGroups\TranslationResultsRibbonGroup.cs" />
-    <Compile Include="RibbonGroups\EditorControllerRibbonGroup.cs" />
-    <Compile Include="UI\TradosStyles.xaml.cs">
-      <DependentUpon>TradosStyles.xaml</DependentUpon>
+    <Compile Include="ElevateCommandLineProcessor.cs" />
+    <Compile Include="UI\FileViewer.xaml.cs">
+      <DependentUpon>FileViewer.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -147,7 +122,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Page Include="UI\TradosStyles.xaml">
+    <Page Include="UI\FileViewer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

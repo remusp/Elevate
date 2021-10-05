@@ -117,11 +117,74 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="EditorControllerRibbonGroup_Name" xml:space="preserve">
+    <value>Editor controller</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.DemoProjectAction_Name" xml:space="preserve">
+    <value>Select some projects</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.GetActiveTuAction_Name" xml:space="preserve">
+    <value>Get active TU </value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.GetTranslationResultsAction_Name" xml:space="preserve">
+    <value>Get translation results</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.GetTusActivePageAction_Name" xml:space="preserve">
+    <value>Get TUs for active page</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.GetTusMarkedForDeletionAction_Name" xml:space="preserve">
+    <value>TUs marked for deletion</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.HasSearchResultAction_Name" xml:space="preserve">
+    <value>Has search result</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.SelectFilesAction_Name" xml:space="preserve">
+    <value>Select files</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.SelectRowAction_Name" xml:space="preserve">
+    <value>Select TU</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.SelectSearchResultAction_Name" xml:space="preserve">
+    <value>Select search result</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.SelectSegment_Name" xml:space="preserve">
+    <value>Select segment</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.SetActiveTuSource_Name" xml:space="preserve">
+    <value>Set active TU source</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.SetActiveTuTarget_Name" xml:space="preserve">
+    <value>Set active TU target</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.ShowWindowAction_Name" xml:space="preserve">
+    <value>Translation Results window</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.VisibleFilesAction_Name" xml:space="preserve">
+    <value>Visible files</value>
+  </data>
+  <data name="Elevate.Samples.SpinnerNew.WriteToSegment_Name" xml:space="preserve">
+    <value>Write to segment</value>
+  </data>
+  <data name="FilesControllerRibbonGroup_Name" xml:space="preserve">
+    <value>Files controller</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="MyAction_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\MyAction.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MyCustomRibbonGroup_Name" xml:space="preserve">
+    <value>Elevate Samples</value>
+  </data>
   <data name="Plugin_Name" xml:space="preserve">
     <value>Elevate.Samples</value>
+  </data>
+  <data name="ProjectsControllerRibbonGroup_Name" xml:space="preserve">
+    <value>Projects controller</value>
+  </data>
+  <data name="TranslationMemoriesRibbonGroup_Name" xml:space="preserve">
+    <value>Translation Memories</value>
+  </data>
+  <data name="TranslationResultsRibbonGroup_Name" xml:space="preserve">
+    <value>Translation results</value>
   </data>
 </root>
