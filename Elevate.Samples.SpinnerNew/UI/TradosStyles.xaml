@@ -45,5 +45,12 @@
         <tc:CustomProgressRing Text="SDL Themed Spinner"
                                Margin="5"
                                Style="{StaticResource Sdl.CustomProgressRing.Normal}" />
+        <tc:CustomProgressRing Text="Customized Spinner"
+                               Margin="5"
+                               SpinnerColor="Crimson"
+                               SpinnerMargin="20"
+                               SpinnerThickness="40"
+                               FontFamily="Consolas"
+                               Style="{StaticResource Sdl.CustomProgressRing.Normal}" />
     </StackPanel>
 </Window>
