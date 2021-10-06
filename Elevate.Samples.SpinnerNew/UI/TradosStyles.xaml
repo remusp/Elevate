@@ -50,7 +50,7 @@
                                SpinnerColor="Crimson"
                                SpinnerMargin="20"
                                SpinnerThickness="40"
-                               FontFamily="Consolas"
+                               FontFamily="Monotype Corsiva"
                                Style="{StaticResource Sdl.CustomProgressRing.Normal}" />
     </StackPanel>
 </Window>
