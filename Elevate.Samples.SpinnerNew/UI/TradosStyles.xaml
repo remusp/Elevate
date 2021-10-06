@@ -42,7 +42,7 @@
                    Style="{StaticResource Sdl.TextBlock.SubsectionTitleStyle}" />
         <tc:CustomProgressRing Text="Default Spinner (no styles applied)" 
                                Margin="5"/>
-        <tc:CustomProgressRing Text="SDL Themed Spinner"
+        <tc:CustomProgressRing Text="RWS Themed Spinner"
                                Margin="5"
                                Style="{StaticResource Sdl.CustomProgressRing.Normal}" />
         <tc:CustomProgressRing Text="Customized Spinner"
